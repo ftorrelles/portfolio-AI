@@ -1,0 +1,99 @@
+{
+  "nav": {
+    "skills": "Habilidades",
+    "projects": "Proyectos",
+    "about": "Sobre mí",
+    "process": "Proceso",
+    "cta": "Hablemos ↗"
+  },
+  "hero": {
+    "badge": "Disponible para proyectos",
+    "h1_white": "Full-Stack Developer &",
+    "h1_green": "AI-Augmented Specialist",
+    "subtitle": "Multi-Agent Systems · LLM Orchestration · BYU-Idaho",
+    "cta_primary": "Contactar por WhatsApp ↗",
+    "cta_secondary": "Ver proyectos"
+  },
+  "stats": [
+    { "value": "4+",  "label": "Años de experiencia" },
+    { "value": "30+", "label": "Proyectos entregados" },
+    { "value": "10+", "label": "Certificaciones técnicas" }
+  ],
+  "skills": {
+    "label": "STACK TECNOLÓGICO",
+    "h2_white": "Dev Stack &",
+    "h2_green": "AI Stack",
+    "dev_frontend": {
+      "title": "Frontend",
+      "items": ["React.js / Next.js (App Router)","Angular","TypeScript / JavaScript","Tailwind CSS / Bootstrap / CSS3","HTML5 / Redux / React Hook Form","WordPress / Elementor / Figma"]
+    },
+    "dev_backend": {
+      "title": "Backend",
+      "items": ["Node.js / Express.js","APIs REST","PostgreSQL / MySQL / MongoDB","JWT / BCRYPT / Sequelize"]
+    },
+    "ai": {
+      "title": "AI Integration",
+      "items": ["OpenAI API · Claude API · Gemini API · Whisper API","LangChain · LangGraph","Multi-Agent Systems · LLM Orchestration","Prompt Engineering · LLM Fine-tuning · Vector DBs","Claude Code · OpenCode · OpenClaw · n8n","AI-Augmented Development"]
+    }
+  },
+  "projects": {
+    "label": "PORTAFOLIO",
+    "h2_white": "Proyectos",
+    "h2_green": "Destacados",
+    "ai_label": "🚀 AI-Powered Projects",
+    "web_label": "💻 Web Projects",
+    "items": [
+      { "name": "Vivir Chevere", "desc": "Software integral de gestión empresarial para el sector naturista.", "tags": ["React","Node.js","MySQL"], "badge": "AI-Powered", "url": "https://www.youtube.com/watch?v=KKoggMgaJDw", "image": "vivirc.webp" },
+      { "name": "NetBar", "desc": "Sitio web para empresa proveedora de servicios de internet.", "tags": ["React","JS"], "badge": "AI-Powered", "url": "https://netbar.netlify.app/", "image": "netbar.webp" },
+      { "name": "NexDevp", "desc": "Agencia de desarrollo web especializada en AI-Augmented Development.", "tags": ["React","LangChain"], "badge": "AI-Powered", "url": "https://nexdevp.com/", "image": "nexdevp.webp" },
+      { "name": "Liliana Pardo", "desc": "Sitio web para psicóloga clínica con integración de agenda.", "tags": ["React","CSS"], "badge": "", "url": "https://liliana-pardo.netlify.app/", "image": "liliana.webp" },
+      { "name": "Julio Cesar", "desc": "Plataforma profesional para terapeuta especializado en adicciones.", "tags": ["React","TypeScript"], "badge": "", "url": "https://terapuetajuliocesar.netlify.app/", "image": "julioc.webp" },
+      { "name": "Lazos de Amor", "desc": "Plataforma web para fundación sin ánimo de lucro.", "tags": ["React","Bootstrap"], "badge": "", "url": "https://lazos-de-amor.netlify.app/", "image": "lazos.webp" },
+      { "name": "Biupoll", "desc": "Landing page para empresa de investigación de mercados.", "tags": ["React","JS"], "badge": "", "url": "https://www.biupoll.com.co", "image": "biupoll.webp" }
+    ]
+  },
+  "about": {
+    "label": "SOBRE MÍ",
+    "h2_white": "Behind the",
+    "h2_green": "Logic",
+    "text": "Soy un arquitecto de software impulsado por el desafío de conectar necesidades humanas complejas con soluciones técnicas elegantes. Con enfoque en el ecosistema JavaScript y flujos de trabajo con IA, construyo herramientas que no solo funcionan — piensan.\n\nMi enfoque está basado en integridad estructural y escalabilidad. Ya sea una aplicación web de alto tráfico o un agente de IA autónomo, garantizo que los cimientos sean tan robustos como la interfaz es intuitiva.",
+    "achievements": [
+      { "icon": "🎓", "title": "BYU-Idaho", "subtitle": "Software Development" },
+      { "icon": "🤖", "title": "AI Certification", "subtitle": "Advanced Curriculum" },
+      { "icon": "🌎", "title": "Freelance Era", "subtitle": "Global Clients" }
+    ],
+    "social_proof": "1,275 seguidores en LinkedIn · 500+ conexiones"
+  },
+  "process": {
+    "label": "MI PROCESO",
+    "h2_white": "The",
+    "h2_green": "Workflow",
+    "subtitle": "Un enfoque sistemático hacia la excelencia digital.",
+    "steps": [
+      { "number": "01", "title": "Discovery",     "desc": "Mapeo del terreno y definición del objetivo." },
+      { "number": "02", "title": "Architecture",  "desc": "Diseño de blueprint con foco en escalabilidad e IA." },
+      { "number": "03", "title": "Sprinting",     "desc": "Desarrollo técnico rápido con testing iterativo." },
+      { "number": "04", "title": "Deployment",    "desc": "Optimización final y lanzamiento del ecosistema." }
+    ]
+  },
+  "cta": {
+    "h2_white": "¿Tienes un proyecto",
+    "h2_green": "en mente?",
+    "subtitle": "Colaboremos para construir algo excepcional. Actualmente acepto nuevos proyectos y consultas.",
+    "button": "Hablemos ↗"
+  },
+  "footer": {
+    "name": "Francisco Torrelles",
+    "role1": "Senior Full-Stack Developer",
+    "role2": "AI Infrastructure Consultant",
+    "explore_title": "Explorar",
+    "explore": ["Habilidades","Proyectos","Sobre mí","Proceso"],
+    "connect_title": "Conectar",
+    "connect": [
+      { "name": "LinkedIn", "url": "https://linkedin.com/in/francisco-torrelles-227771209" },
+      { "name": "GitHub",   "url": "https://github.com" },
+      { "name": "WhatsApp", "url": "https://wa.me/573012632430" }
+    ],
+    "copy": "© 2025 Francisco Torrelles · Built with Next.js"
+  }
+}
