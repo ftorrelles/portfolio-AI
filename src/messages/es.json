@@ -91,9 +91,9 @@
     "connect_title": "Conectar",
     "connect": [
       { "name": "LinkedIn", "url": "https://linkedin.com/in/francisco-torrelles-227771209" },
-      { "name": "GitHub",   "url": "https://github.com" },
+      { "name": "GitHub",   "url": "https://github.com/ftorrelles" },
       { "name": "WhatsApp", "url": "https://wa.me/573012632430" }
     ],
-    "copy": "© 2025 Francisco Torrelles · Built with Next.js"
+    "copy": "© 2026 Francisco Torrelles · Built with Next.js"
   }
 }

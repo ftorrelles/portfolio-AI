@@ -44,7 +44,7 @@ export default function Footer({ t }: { t: any }) {
         </div>
       </div>
       
-      <p className="border-t border-white/5 mt-8 pt-6 text-nex-grey text-xs text-center">{t.footer.copy.replace(' · Built with Next.js', '')}</p>
+      <p className="border-t border-white/5 mt-8 pt-6 text-nex-grey text-xs text-center">{t.footer.copy}</p>
     </footer>
   );
 }
