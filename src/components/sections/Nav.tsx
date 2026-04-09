@@ -73,7 +73,7 @@ export default function Nav({ t }: { t: any }) {
             <span className="text-nex-grey">|</span>
             <a href={switchLocale('en')} className={`transition ${currentLocale === 'en' ? 'text-nex-green font-bold' : 'text-nex-grey hover:text-white'}`}>EN</a>
           </div>
-          <a href="https://wa.me/573012634230" target="_blank" rel="noopener noreferrer" className="bg-transparent border border-nex-green text-nex-green font-semibold px-5 py-2 rounded-full hover:bg-nex-green hover:text-black transition duration-300 text-sm">{t.nav.cta}</a>
+          <a href="https://wa.me/573012632430" target="_blank" rel="noopener noreferrer" className="bg-transparent border border-nex-green text-nex-green font-semibold px-5 py-2 rounded-full hover:bg-nex-green hover:text-black transition duration-300 text-sm">{t.nav.cta}</a>
         </div>
       </div>
     </nav>

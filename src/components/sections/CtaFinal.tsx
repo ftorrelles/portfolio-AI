@@ -10,7 +10,7 @@ export default function CtaFinal({ t }: { t: any }) {
         <span className="text-nex-green">{t.cta.h2_green}</span>
       </h2>
       <p className="text-nex-grey text-lg mb-12 max-w-lg mx-auto">{t.cta.subtitle}</p>
-      <Button href="https://wa.me/573012634230" variant="primary" className="text-lg px-12 py-5 font-bold rounded-md hover:scale-105">
+      <Button href="https://wa.me/573012632430" variant="primary" className="text-lg px-12 py-5 font-bold rounded-md hover:scale-105">
         {t.cta.button}
       </Button>
       <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-16 h-px bg-nex-green/30" />

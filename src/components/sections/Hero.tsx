@@ -33,7 +33,7 @@ export default function Hero({ t }: { t: any }) {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4">
-            <Button href="https://wa.me/573012634230" variant="primary">
+            <Button href="https://wa.me/573012632430" variant="primary">
               {t.hero.cta_primary}
             </Button>
             <Button href="#proyectos" variant="secondary">
