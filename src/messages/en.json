@@ -95,5 +95,9 @@
       { "name": "WhatsApp", "url": "https://wa.me/573012632430" }
     ],
     "copy": "© 2026 Francisco Torrelles · Built with Next.js"
+  },
+  "chatbot": {
+    "title": "Virtual Assistant",
+    "welcome": "Hi there! 👋 I'm your virtual assistant, how can I help you today?"
   }
 }

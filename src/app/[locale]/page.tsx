@@ -5,6 +5,7 @@ import Nav from '@/components/sections/Nav';
 import Hero from '@/components/sections/Hero';
 import Stats from '@/components/sections/Stats';
 import WhatsAppFloat from '@/components/ui/WhatsAppFloat';
+import ChatBot from '@/components/ui/ChatBot';
 import CursorEffect from '@/components/ui/CursorEffect';
 
 const Skills = dynamic(() => import('@/components/sections/Skills'), { ssr: true });
@@ -39,6 +40,7 @@ export default async function Home({
       <Process t={t} />
       <CtaFinal t={t} />
       <Footer t={t} />
+      <ChatBot t={t} />
       <WhatsAppFloat />
     </main>
   );
