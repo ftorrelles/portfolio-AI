@@ -65,6 +65,12 @@ export default function Nav({ t }: { t: any }) {
               {activeSection === item.id && <span className="absolute bottom-0 left-0 w-full h-0.5 bg-nex-green shadow-[0_0_10px_#22b561]"></span>}
             </a>
           ))}
+          {/* Language switcher for mobile */}
+          <div className="flex md:hidden items-center gap-2 pt-4 border-t border-white/10">
+            <a href={switchLocale('es')} className={`transition ${currentLocale === 'es' ? 'text-nex-green font-bold' : 'text-nex-grey hover:text-white'}`}>ES</a>
+            <span className="text-nex-grey">|</span>
+            <a href={switchLocale('en')} className={`transition ${currentLocale === 'en' ? 'text-nex-green font-bold' : 'text-nex-grey hover:text-white'}`}>EN</a>
+          </div>
         </div>
         
         <div className="hidden md:flex items-center gap-6">
@@ -73,7 +79,7 @@ export default function Nav({ t }: { t: any }) {
             <span className="text-nex-grey">|</span>
             <a href={switchLocale('en')} className={`transition ${currentLocale === 'en' ? 'text-nex-green font-bold' : 'text-nex-grey hover:text-white'}`}>EN</a>
           </div>
-          <a href="https://wa.me/573012632430" target="_blank" rel="noopener noreferrer" className="bg-transparent border border-nex-green text-nex-green font-semibold px-5 py-2 rounded-full hover:bg-nex-green hover:text-black transition duration-300 text-sm">{t.nav.cta}</a>
+          <a href="https://wa.me/34677525806" target="_blank" rel="noopener noreferrer" className="bg-transparent border border-nex-green text-nex-green font-semibold px-5 py-2 rounded-full hover:bg-nex-green hover:text-black transition duration-300 text-sm">{t.nav.cta}</a>
         </div>
       </div>
     </nav>

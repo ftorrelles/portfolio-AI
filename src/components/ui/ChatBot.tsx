@@ -43,7 +43,7 @@ export default function ChatBot({ t }: { t: any }) {
   };
 
   return (
-    <>
+    <div className="hidden md:block">
       <button
         onClick={() => setIsOpen(!isOpen)}
         className="fixed bottom-6 right-6 z-50 flex items-center justify-center h-16 w-16 rounded-full bg-nex-green text-black shadow-lg hover:brightness-110 transition-all"
@@ -119,6 +119,6 @@ export default function ChatBot({ t }: { t: any }) {
           </div>
         </div>
       )}
-    </>
+    </div>
   );
 }
