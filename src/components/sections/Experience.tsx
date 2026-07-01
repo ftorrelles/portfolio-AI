@@ -15,9 +15,9 @@ export default function Experience({ t }: { t: any }) {
 
         {t.experience.seeking_label && (
           <div className="relative mb-6">
-            <span className="absolute -left-[2.6rem] top-1/2 -translate-y-1/2 flex h-3 w-3">
+            <span className="absolute -left-[2.85rem] top-1/2 -translate-y-1/2 flex h-4 w-4">
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-nex-green opacity-75"></span>
-              <span className="relative inline-flex rounded-full h-3 w-3 bg-nex-green"></span>
+              <span className="relative inline-flex rounded-full h-4 w-4 bg-nex-green"></span>
             </span>
             <span className="inline-flex items-center gap-1.5 text-xs uppercase tracking-widest text-nex-green bg-nex-green/10 border border-nex-green/30 rounded-full px-3 py-1">
               {t.experience.seeking_label}
@@ -28,12 +28,12 @@ export default function Experience({ t }: { t: any }) {
         {t.experience.roles.map((role: any, i: number) => (
           <AnimatedEntry key={i} delay={i * 150} className={i === 0 ? 'relative' : 'relative opacity-60'}>
             {i === 0 ? (
-              <span className="absolute -left-[2.6rem] top-1 flex h-3 w-3">
+              <span className="absolute -left-[2.85rem] top-0.5 flex h-4 w-4">
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-nex-green opacity-75"></span>
-                <span className="relative inline-flex rounded-full h-3 w-3 bg-nex-green shadow-[0_0_10px_#22b561]"></span>
+                <span className="relative inline-flex rounded-full h-4 w-4 bg-nex-green shadow-[0_0_12px_#22b561]"></span>
               </span>
             ) : (
-              <span className="absolute -left-[2.6rem] top-1 w-3 h-3 rounded-full bg-white/20"></span>
+              <span className="absolute -left-[2.85rem] top-0.5 w-4 h-4 rounded-full bg-white/20"></span>
             )}
             <div className="flex flex-col md:flex-row md:items-baseline md:justify-between gap-1 mb-2">
               <h3 className="text-white font-semibold text-lg">

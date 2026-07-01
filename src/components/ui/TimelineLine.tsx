@@ -36,7 +36,7 @@ export default function TimelineLine() {
   return (
     <div
       ref={ref}
-      className="absolute -left-[4.1px] top-0 bottom-0 w-px bg-gradient-to-b from-nex-green/50 via-white/10 to-white/10"
+      className="absolute -left-[7.1px] top-0 bottom-0 w-[3px] rounded-full bg-gradient-to-b from-nex-green via-nex-green/25 to-white/15 shadow-[0_0_8px_rgba(34,181,97,0.4)]"
     />
   );
 }
