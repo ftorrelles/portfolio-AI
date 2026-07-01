@@ -1,5 +1,6 @@
 import SectionLabel from "../ui/SectionLabel";
 import AnimatedEntry from "../ui/AnimatedEntry";
+import TimelineLine from "../ui/TimelineLine";
 
 export default function Experience({ t }: { t: any }) {
   return (
@@ -9,39 +10,56 @@ export default function Experience({ t }: { t: any }) {
         <span className="text-white">{t.experience.h2_white} </span>
         <span className="text-nex-green">{t.experience.h2_green}</span>
       </h2>
-      <div className="relative border-l border-white/10 pl-8 flex flex-col gap-12">
+      <div className="relative pl-8 flex flex-col gap-12">
+        <TimelineLine />
+
+        {t.experience.seeking_label && (
+          <div className="relative">
+            <span className="absolute -left-[2.6rem] top-1 flex h-3 w-3">
+              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-nex-green opacity-75"></span>
+              <span className="relative inline-flex rounded-full h-3 w-3 bg-nex-green"></span>
+            </span>
+            <p className="text-nex-green text-xs font-semibold uppercase tracking-widest">{t.experience.seeking_label}</p>
+          </div>
+        )}
+
         {t.experience.roles.map((role: any, i: number) => (
-          <AnimatedEntry key={i} delay={i * 150}>
-            <div className="relative">
-              <span className="absolute -left-[2.6rem] top-1 w-3 h-3 rounded-full bg-nex-green shadow-[0_0_10px_#22b561]"></span>
-              <div className="flex flex-col md:flex-row md:items-baseline md:justify-between gap-1 mb-2">
-                <h3 className="text-white font-semibold text-lg">
-                  {role.role} <span className="text-nex-green">· {role.company}</span>
-                </h3>
-                <span className="text-xs uppercase tracking-widest text-nex-grey">{role.period}</span>
-              </div>
-              {role.location && (
-                <p className="text-xs text-nex-grey mb-3">{role.location}</p>
-              )}
-              {role.blurb && (
-                <p className="text-nex-grey text-sm mb-4 italic">{role.blurb}</p>
-              )}
-              {Array.isArray(role.groups) && role.groups.map((group: { heading?: string; items: string[] }, gIdx: number) => (
-                <div key={gIdx} className={gIdx > 0 ? 'mt-5' : undefined}>
-                  {group.heading && (
-                    <h4 className="text-white/70 text-xs font-semibold uppercase tracking-wider mb-2">{group.heading}</h4>
-                  )}
-                  <ul className="flex flex-col gap-2">
-                    {group.items.map((item: string, iIdx: number) => (
-                      <li key={iIdx} className="text-nex-grey text-sm flex items-start gap-2">
-                        <span className="w-1.5 h-1.5 rounded-full bg-nex-green mt-1.5 flex-shrink-0"></span>
-                        <span>{item}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              ))}
+          <AnimatedEntry key={i} delay={i * 150} className={i === 0 ? 'relative' : 'relative opacity-60'}>
+            {i === 0 ? (
+              <span className="absolute -left-[2.6rem] top-1 flex h-3 w-3">
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-nex-green opacity-75"></span>
+                <span className="relative inline-flex rounded-full h-3 w-3 bg-nex-green shadow-[0_0_10px_#22b561]"></span>
+              </span>
+            ) : (
+              <span className="absolute -left-[2.6rem] top-1 w-3 h-3 rounded-full bg-white/20"></span>
+            )}
+            <div className="flex flex-col md:flex-row md:items-baseline md:justify-between gap-1 mb-2">
+              <h3 className="text-white font-semibold text-lg">
+                {role.role} <span className="text-nex-green">· {role.company}</span>
+              </h3>
+              <span className="text-xs uppercase tracking-widest text-nex-grey">{role.period}</span>
             </div>
+            {role.location && (
+              <p className="text-xs text-nex-grey mb-3">{role.location}</p>
+            )}
+            {role.blurb && (
+              <p className="text-nex-grey text-sm mb-4 italic">{role.blurb}</p>
+            )}
+            {Array.isArray(role.groups) && role.groups.map((group: { heading?: string; items: string[] }, gIdx: number) => (
+              <div key={gIdx} className={gIdx > 0 ? 'mt-5' : undefined}>
+                {group.heading && (
+                  <h4 className="text-white/70 text-xs font-semibold uppercase tracking-wider mb-2">{group.heading}</h4>
+                )}
+                <ul className="flex flex-col gap-2">
+                  {group.items.map((item: string, iIdx: number) => (
+                    <li key={iIdx} className="text-nex-grey text-sm flex items-start gap-2">
+                      <span className="w-1.5 h-1.5 rounded-full bg-nex-green mt-1.5 flex-shrink-0"></span>
+                      <span>{item}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
           </AnimatedEntry>
         ))}
       </div>
