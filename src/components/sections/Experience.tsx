@@ -1,0 +1,42 @@
+import SectionLabel from "../ui/SectionLabel";
+import AnimatedEntry from "../ui/AnimatedEntry";
+
+export default function Experience({ t }: { t: any }) {
+  return (
+    <section id="experiencia" className="py-24 px-6 max-w-7xl mx-auto section-divider">
+      <SectionLabel>{t.experience.label}</SectionLabel>
+      <h2 style={{ fontSize: 'clamp(1.8rem, 3.5vw, 3rem)' }} className="font-bold leading-tight mb-16">
+        <span className="text-white">{t.experience.h2_white} </span>
+        <span className="text-nex-green">{t.experience.h2_green}</span>
+      </h2>
+      <div className="relative border-l border-white/10 pl-8 flex flex-col gap-12">
+        {t.experience.roles.map((role: any, i: number) => (
+          <AnimatedEntry key={i} delay={i * 150}>
+            <div className="relative">
+              <span className="absolute -left-[2.6rem] top-1 w-3 h-3 rounded-full bg-nex-green shadow-[0_0_10px_#22b561]"></span>
+              <div className="flex flex-col md:flex-row md:items-baseline md:justify-between gap-1 mb-2">
+                <h3 className="text-white font-semibold text-lg">
+                  {role.role} <span className="text-nex-green">· {role.company}</span>
+                </h3>
+                <span className="text-xs uppercase tracking-widest text-nex-grey">{role.period}</span>
+              </div>
+              {role.location && (
+                <p className="text-xs text-nex-grey mb-3">{role.location}</p>
+              )}
+              {Array.isArray(role.highlights) && role.highlights.length > 0 && (
+                <ul className="flex flex-col gap-2">
+                  {role.highlights.map((highlight: string, hIdx: number) => (
+                    <li key={hIdx} className="text-nex-grey text-sm flex items-start gap-2">
+                      <span className="w-1.5 h-1.5 rounded-full bg-nex-green mt-1.5 flex-shrink-0"></span>
+                      <span>{highlight}</span>
+                    </li>
+                  ))}
+                </ul>
+              )}
+            </div>
+          </AnimatedEntry>
+        ))}
+      </div>
+    </section>
+  );
+}

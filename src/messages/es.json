@@ -1,40 +1,107 @@
 {
   "nav": {
     "skills": "Habilidades",
+    "experience": "Experiencia",
     "projects": "Proyectos",
     "about": "Sobre mí",
     "process": "Proceso",
+    "certifications": "Certificaciones",
     "cta": "Hablemos ↗"
   },
   "hero": {
     "badge": "Disponible para proyectos",
-    "h1_white": "Full-Stack Developer &",
-    "h1_green": "AI-Augmented Specialist",
+    "h1_white": "Ingeniero de Sistemas de IA &",
+    "h1_green": "Desarrollador Full Stack",
     "subtitle": "Multi-Agent Systems · LLM Orchestration · BYU-Idaho",
     "cta_primary": "Contactar por WhatsApp ↗",
     "cta_secondary": "Ver proyectos"
   },
   "stats": [
-    { "value": "4+",  "label": "Años de experiencia" },
+    { "value": "3+",  "label": "Años de experiencia" },
     { "value": "30+", "label": "Proyectos entregados" },
-    { "value": "10+", "label": "Certificaciones técnicas" }
+    { "value": "6+", "label": "Certificaciones técnicas" }
   ],
+  "experience": {
+    "label": "TRAYECTORIA",
+    "h2_white": "Experiencia",
+    "h2_green": "Profesional",
+    "roles": [
+      {
+        "company": "NexDevp",
+        "role": "Ingeniero de Sistemas de IA y Desarrollador Full Stack",
+        "period": "Ene 2026 — Presente",
+        "location": "Remoto",
+        "highlights": [
+          "Construí todos los proyectos bajo una arquitectura de IA con control humano — subagentes especializados por dominio, harnesses que gobiernan cada proceso, y Engram manteniendo el contexto persistente entre proyectos.",
+          "Apliqué SDD en cada proyecto: 0 errores de TypeScript en producción en todas las plataformas; cada camino crítico cubierto por tests unitarios antes de cada release.",
+          "Entregué 3 plataformas de software a medida en 2026, cada una reemplazando una operación completamente manual y reduciendo el tiempo operativo entre un 30% y un 100%."
+        ]
+      },
+      {
+        "company": "CodeCraft",
+        "role": "Desarrollador Full Stack",
+        "period": "May 2023 — Dic 2025",
+        "location": "Remoto",
+        "highlights": [
+          "Construí sistemas empresariales completos de gestión con React, Node.js, Express y MySQL — APIs RESTful con arquitectura controller/service y Sequelize ORM.",
+          "Diseñé y desplegué sistemas de captura de leads potenciados con IA conectados a Google Sheets y Supabase, reduciendo a cero la carga manual de CRM.",
+          "Integré flujos de automatización con n8n y la API de WhatsApp Business para pipelines de comunicación con clientes."
+        ]
+      },
+      {
+        "company": "Dichter & Neira",
+        "role": "Analista de Bienestar — Operaciones",
+        "period": "Ene 2021 — Ago 2022",
+        "location": "Latinoamérica (multi-país)",
+        "highlights": [
+          "Coordiné proyectos y equipos de campo en 5 países de Latinoamérica simultáneamente.",
+          "Construí dashboards en Power BI que consolidaban datos multi-país para la toma de decisiones a nivel directivo.",
+          "Diseñé e implementé programas regionales de fidelización de principio a fin."
+        ]
+      }
+    ]
+  },
   "skills": {
     "label": "STACK TECNOLÓGICO",
     "h2_white": "Dev Stack &",
     "h2_green": "AI Stack",
-    "dev_frontend": {
-      "title": "Frontend",
-      "items": ["React.js / Next.js (App Router)","Angular","TypeScript / JavaScript","Tailwind CSS / Bootstrap / CSS3","HTML5 / Redux / React Hook Form","WordPress / Elementor / Figma"]
-    },
-    "dev_backend": {
-      "title": "Backend",
-      "items": ["Node.js / Express.js","APIs REST","PostgreSQL / MySQL / MongoDB","JWT / BCRYPT / Sequelize"]
-    },
-    "ai": {
-      "title": "AI Integration",
-      "items": ["OpenAI API · Claude API · Gemini API · Whisper API","LangChain · LangGraph","Multi-Agent Systems · LLM Orchestration","Prompt Engineering · LLM Fine-tuning · Vector DBs","Claude Code · OpenCode · OpenClaw · n8n","AI-Augmented Development"]
-    }
+    "categories": [
+      {
+        "id": "frontend",
+        "title": "Frontend",
+        "icon": "frontend",
+        "color": "white",
+        "items": ["TypeScript","React 19","Next.js 15/16 (App Router)","React Server Components","Server Actions","Node.js / Express.js","Angular","Redux","Tailwind CSS v4"]
+      },
+      {
+        "id": "backend",
+        "title": "Backend",
+        "icon": "backend",
+        "color": "white",
+        "items": ["PostgreSQL","Supabase (Auth · Realtime · Storage · RLS · RPCs)","Drizzle ORM","Sequelize ORM","MySQL","MongoDB","REST API","JWT · Bcrypt","Vercel · Docker / Docker Compose","Oracle Cloud (OCI)","PWA / Service Workers","Resend","WhatsApp Business API","Google Sheets / Drive"]
+      },
+      {
+        "id": "ai",
+        "title": "AI Integration",
+        "icon": "ai",
+        "color": "green",
+        "items": ["LangChain · LangGraph","Multi-Agent Systems · LLM Orchestration","Whisper API","LLM Fine-tuning"]
+      },
+      {
+        "id": "ai-augmented-dev",
+        "title": "AI-Augmented Dev",
+        "icon": "ai_aug",
+        "color": "green",
+        "items": ["Claude Code · OpenCode · Antigravity","Multi-Agent / Subagent Architecture","Agent Harnesses","Persistent Memory (Engram)","SDD Methodology","MCP (Model Context Protocol)","Prompt Engineering"]
+      },
+      {
+        "id": "ai-infrastructure",
+        "title": "AI Infrastructure",
+        "icon": "ai_infra",
+        "color": "green",
+        "items": ["RAG Architecture","Pinecone","Supabase pgvector","Google Vertex AI (Gemini 2.5 Flash · text-embedding-005)","OpenAI API","Claude API","n8n (self-hosted)"]
+      }
+    ]
   },
   "projects": {
     "label": "PORTAFOLIO",
@@ -42,6 +109,57 @@
     "h2_green": "Destacados",
     "ai_label": "🚀 AI-Powered Projects",
     "web_label": "💻 Web Projects",
+    "demoted_label": "Trabajos Anteriores",
+    "featured": [
+      {
+        "slug": "construction-budget",
+        "name": "Construction Budget Platform",
+        "summary": "Una constructora que opera de forma remota desde Estados Unidos gestionaba todo su ciclo de presupuesto — cotizaciones, aprobaciones, ejecución, cierre — mediante Excel y WhatsApp, sin visibilidad de costos en tiempo real. Plataforma full-stack que centraliza todo el ciclo de vida del proyecto: flujos de aprobación guiados por rol, seguimiento de costos en tiempo real (presupuestado vs. real por ítem con alertas tipo semáforo), generación de PDF con un clic para los clientes, y un dashboard de rentabilidad en vivo al que el dueño accede desde Estados Unidos.",
+        "tags": ["Next.js 16", "React 19", "TypeScript", "Tailwind v4", "Supabase", "PWA"],
+        "screens": [
+          { "slug": "rentabilidad", "label": "Rentabilidad", "image": "rentabilidad.png", "caption": "Dashboard de rentabilidad en vivo: ganancia estimada, margen y porcentaje de presupuesto utilizado de un vistazo." },
+          { "slug": "presupuestos", "label": "Presupuestos", "image": "presupuestos.png", "caption": "Vista de lista de presupuestos con estado en tiempo real por proyecto — en ejecución, en revisión o cerrado." }
+        ],
+        "metrics": [
+          { "value": 2550, "prefix": "$", "label": "Ganancia estimada", "kind": "counter" },
+          { "value": 30, "suffix": "%", "label": "Margen", "kind": "counter" },
+          { "value": 93, "suffix": "%", "label": "Presupuesto utilizado", "kind": "bar" }
+        ]
+      },
+      {
+        "slug": "speakpath",
+        "name": "SpeakPath",
+        "summary": "Una academia de inglés que gestionaba ~120 clases mensuales con agendamiento manual (WhatsApp), contenido estático en PDF y sin visibilidad financiera — con dobles reservas crónicas y sin datos sobre la utilización de profesores ni el progreso de los estudiantes. PWA full-stack con tres paneles según rol (estudiante, profesor, administrador): agendamiento automatizado de clases 1 a 1 con disponibilidad de profesores en tiempo real y soporte de zona horaria, contenido de lecciones interactivo que reemplaza los PDF, dashboard de ganancias para profesores, y métricas administrativas centralizadas.",
+        "tags": ["Next.js 15", "TypeScript", "React Server Components", "Server Actions", "PostgreSQL", "Drizzle ORM", "Supabase", "PWA"],
+        "screens": [
+          { "slug": "dashboard", "label": "Dashboard", "image": "dashboard.png", "caption": "Dashboard del estudiante con el progreso del curso a lo largo de todo el currículo." },
+          { "slug": "curriculum", "label": "Curriculum", "image": "curriculum.png", "caption": "6 unidades / 25 lecciones, desde \"Meeting People\" hasta \"Daily Life\"." },
+          { "slug": "roleplay", "label": "Role-play", "image": "roleplay.png", "caption": "Ejercicio guiado de conversación de 17 minutos: \"Meeting Someone New\"." }
+        ],
+        "metrics": [
+          { "value": 8, "suffix": "%", "label": "Progreso del curso", "kind": "bar" },
+          { "value": 25, "label": "Lecciones en el currículo", "kind": "counter" },
+          { "value": 17, "suffix": " min", "label": "Ejercicio de role-play", "kind": "counter" }
+        ]
+      },
+      {
+        "slug": "cocinerhosp",
+        "name": "CocinerHosp",
+        "summary": "Una empresa de catering hospitalario que atiende 6 centros y 2 servicios diarios calculaba las cantidades de producción de forma manual — proteínas, porciones, cantidad de bolsas congeladas, variantes dietarias — con riesgo sistemático de error a esa escala. PWA mobile-first (iOS + Android, sin tienda de aplicaciones) construida en una semana. Calculadora de producción automatizada con factores de merma auto-completados, módulo de dietas blandas, motor de escalado de recetas, registro de producción, y dashboard de analítica con filtrado por cocinero. Acceso de 3 roles gestionado dentro de la app.",
+        "tags": ["React 18", "TypeScript", "Vite", "Tailwind CSS", "Supabase", "vite-plugin-pwa"],
+        "screens": [
+          { "slug": "dashboard", "label": "Dashboard", "image": "dashboard.png", "caption": "526 barquetas este mes, 75 promedio por día, 19 elaboraciones, gráficos de producción semanal y mensual." },
+          { "slug": "calcular", "label": "Calcular", "image": "calcular.png", "caption": "Calculadora de producción del servicio de almuerzo en 6 sedes: Sur, Candelaria, Parque, SJDD, Hogar A, Hogar B." },
+          { "slug": "dietas-blandas", "label": "Dietas blandas", "image": "dietas-blandas.png", "caption": "Cantidad de bolsas congeladas por variante de dieta blanda: Papas, Zanahoria, Calabaza, Calabacín." }
+        ],
+        "metrics": [
+          { "value": 526, "label": "Barquetas este mes", "kind": "counter" },
+          { "value": 75, "label": "Promedio por día", "kind": "counter" },
+          { "value": 414, "label": "Pacientes por servicio de almuerzo", "kind": "counter" },
+          { "value": 47, "label": "Bolsas congeladas por día", "kind": "counter" }
+        ]
+      }
+    ],
     "items": [
       { "name": "Vivir Chevere", "desc": "Software integral de gestión empresarial para el sector naturista.", "tags": ["React","Node.js","MySQL"], "badge": "AI-Powered", "url": "https://www.youtube.com/watch?v=KKoggMgaJDw", "image": "vivirc.webp" },
       { "name": "NetBar", "desc": "Sitio web para empresa proveedora de servicios de internet.", "tags": ["React","JS"], "badge": "AI-Powered", "url": "https://netbar.netlify.app/", "image": "netbar.webp" },
@@ -76,6 +194,20 @@
       { "number": "04", "title": "Deployment",    "desc": "Optimización final y lanzamiento del ecosistema." }
     ]
   },
+  "certifications": {
+    "label": "CREDENCIALES",
+    "h2_white": "Certificaciones y",
+    "h2_green": "Formación",
+    "in_progress": "En curso",
+    "items": [
+      { "name": "Generative AI with Large Language Models", "issuer": "DeepLearning.AI & AWS", "date": null },
+      { "name": "AI Development: from 0 to Production", "issuer": "BIG School", "date": "Mar 2026" },
+      { "name": "Cybersecurity & Ethical Hacking", "issuer": "BIG School", "date": "Abr 2026" },
+      { "name": "Full-Stack Web Development & CS", "issuer": "Academlo", "date": "2023" },
+      { "name": "Backend Development with Node.js", "issuer": "Academlo", "date": "2023" },
+      { "name": "Frontend Development with React", "issuer": "Academlo", "date": "2023" }
+    ]
+  },
   "cta": {
     "h2_white": "¿Tienes un proyecto",
     "h2_green": "en mente?",
@@ -87,7 +219,7 @@
     "role1": "Senior Full-Stack Developer",
     "role2": "AI Infrastructure Consultant",
     "explore_title": "Explorar",
-    "explore": ["Habilidades","Proyectos","Sobre mí","Proceso"],
+    "explore": ["Experiencia","Habilidades","Proyectos","Sobre mí","Proceso","Certificaciones"],
     "connect_title": "Conectar",
     "connect": [
       { "name": "LinkedIn", "url": "https://linkedin.com/in/francisco-torrelles-227771209" },

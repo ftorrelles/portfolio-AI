@@ -18,7 +18,7 @@ export default function Nav({ t }: { t: any }) {
     const handleScroll = () => {
       setScrolled(window.scrollY > 10);
       
-      const sections = ['skills', 'proyectos', 'sobre-mi', 'proceso'];
+      const sections = ['experiencia', 'skills', 'proyectos', 'sobre-mi', 'proceso', 'certificaciones'];
       for (const section of sections) {
         const element = document.getElementById(section);
         if (element) {
@@ -35,10 +35,12 @@ export default function Nav({ t }: { t: any }) {
   }, []);
 
   const navItems = [
+    { name: t.nav.experience, id: 'experiencia' },
     { name: t.nav.skills, id: 'skills' },
     { name: t.nav.projects, id: 'proyectos' },
     { name: t.nav.about, id: 'sobre-mi' },
     { name: t.nav.process, id: 'proceso' },
+    { name: t.nav.certifications, id: 'certificaciones' },
   ];
 
   return (
