@@ -1,9 +1,11 @@
 'use client';
 import { useEffect, useRef, useState } from 'react';
+import { usePathname } from 'next/navigation';
 import AnimatedEntry from '../ui/AnimatedEntry';
 import DeviceFrame from '../ui/DeviceFrame';
 import Counter from '../ui/Counter';
 import Grow from '../ui/Grow';
+import { getRealScreenMockup } from '../case-mockups/RealScreens';
 
 type Metric = {
   value: number;
@@ -34,9 +36,12 @@ export default function CaseStudies({ t }: { t: any }) {
   const [caseIdx, setCaseIdx] = useState(0);
   const [screenIdx, setScreenIdx] = useState(0);
   const [hasInteractedWithScreens, setHasInteractedWithScreens] = useState(false);
+  const pathname = usePathname();
+  const locale = pathname.split('/')[1] === 'en' ? 'en' : 'es';
 
   const activeCase = cases[caseIdx];
   const activeScreen = activeCase.screens[screenIdx];
+  const mockup = getRealScreenMockup(activeCase.slug, activeScreen.slug, locale);
 
   const handleCaseSelect = (idx: number) => {
     setCaseIdx(idx);
@@ -75,6 +80,7 @@ export default function CaseStudies({ t }: { t: any }) {
               screenSlug={activeScreen.slug}
               image={activeScreen.image}
               label={activeScreen.label}
+              mockup={mockup}
             />
           </TiltPanel>
 

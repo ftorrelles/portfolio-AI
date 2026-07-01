@@ -146,6 +146,7 @@
         "tags": ["Next.js 16", "React 19", "TypeScript", "Tailwind v4", "Supabase", "PWA"],
         "screens": [
           { "slug": "rentabilidad", "label": "Rentabilidad", "image": "rentabilidad.png", "caption": "Live profitability dashboard: estimated profit, margin, and budget utilization at a glance." },
+          { "slug": "presupuestado-vs-real", "label": "Budget vs actual", "image": "presupuestado-vs-real.png", "caption": "Line-item breakdown comparing budgeted vs. actual cost, with deviation per concept." },
           { "slug": "presupuestos", "label": "Presupuestos", "image": "presupuestos.png", "caption": "Budget list view with real-time status per project — in execution, in review, or closed." }
         ],
         "metrics": [

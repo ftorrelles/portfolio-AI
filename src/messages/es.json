@@ -146,6 +146,7 @@
         "tags": ["Next.js 16", "React 19", "TypeScript", "Tailwind v4", "Supabase", "PWA"],
         "screens": [
           { "slug": "rentabilidad", "label": "Rentabilidad", "image": "rentabilidad.png", "caption": "Dashboard de rentabilidad en vivo: ganancia estimada, margen y porcentaje de presupuesto utilizado de un vistazo." },
+          { "slug": "presupuestado-vs-real", "label": "Presupuestado vs Real", "image": "presupuestado-vs-real.png", "caption": "Desglose por partida comparando lo presupuestado contra lo real, con la desviación de cada concepto." },
           { "slug": "presupuestos", "label": "Presupuestos", "image": "presupuestos.png", "caption": "Vista de lista de presupuestos con estado en tiempo real por proyecto — en ejecución, en revisión o cerrado." }
         ],
         "metrics": [
