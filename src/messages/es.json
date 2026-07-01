@@ -128,7 +128,7 @@
     "role1": "Senior Full-Stack Developer",
     "role2": "AI Infrastructure Consultant",
     "explore_title": "Explorar",
-    "explore": ["Habilidades","Proyectos","Sobre mí","Proceso"],
+    "explore": ["Experiencia","Habilidades","Proyectos","Sobre mí","Proceso"],
     "connect_title": "Conectar",
     "connect": [
       { "name": "LinkedIn", "url": "https://linkedin.com/in/francisco-torrelles-227771209" },

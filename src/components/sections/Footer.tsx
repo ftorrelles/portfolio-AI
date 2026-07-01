@@ -10,7 +10,9 @@ export default function Footer({ t }: { t: any }) {
     'Skills ': '#skills',
     'Projects': '#proyectos',
     'About': '#sobre-mi',
-    'Process': '#proceso'
+    'Process': '#proceso',
+    'Experience': '#experiencia',
+    'Experiencia': '#experiencia'
   };
 
   return (
