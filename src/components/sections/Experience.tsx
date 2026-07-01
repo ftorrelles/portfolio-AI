@@ -23,16 +23,24 @@ export default function Experience({ t }: { t: any }) {
               {role.location && (
                 <p className="text-xs text-nex-grey mb-3">{role.location}</p>
               )}
-              {Array.isArray(role.highlights) && role.highlights.length > 0 && (
-                <ul className="flex flex-col gap-2">
-                  {role.highlights.map((highlight: string, hIdx: number) => (
-                    <li key={hIdx} className="text-nex-grey text-sm flex items-start gap-2">
-                      <span className="w-1.5 h-1.5 rounded-full bg-nex-green mt-1.5 flex-shrink-0"></span>
-                      <span>{highlight}</span>
-                    </li>
-                  ))}
-                </ul>
+              {role.blurb && (
+                <p className="text-nex-grey text-sm mb-4 italic">{role.blurb}</p>
               )}
+              {Array.isArray(role.groups) && role.groups.map((group: { heading?: string; items: string[] }, gIdx: number) => (
+                <div key={gIdx} className={gIdx > 0 ? 'mt-5' : undefined}>
+                  {group.heading && (
+                    <h4 className="text-white/70 text-xs font-semibold uppercase tracking-wider mb-2">{group.heading}</h4>
+                  )}
+                  <ul className="flex flex-col gap-2">
+                    {group.items.map((item: string, iIdx: number) => (
+                      <li key={iIdx} className="text-nex-grey text-sm flex items-start gap-2">
+                        <span className="w-1.5 h-1.5 rounded-full bg-nex-green mt-1.5 flex-shrink-0"></span>
+                        <span>{item}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              ))}
             </div>
           </AnimatedEntry>
         ))}
