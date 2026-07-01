@@ -8,14 +8,14 @@
   },
   "hero": {
     "badge": "Disponible para proyectos",
-    "h1_white": "Full-Stack Developer &",
-    "h1_green": "AI-Augmented Specialist",
+    "h1_white": "Ingeniero de Sistemas de IA &",
+    "h1_green": "Desarrollador Full Stack",
     "subtitle": "Multi-Agent Systems · LLM Orchestration · BYU-Idaho",
     "cta_primary": "Contactar por WhatsApp ↗",
     "cta_secondary": "Ver proyectos"
   },
   "stats": [
-    { "value": "4+",  "label": "Años de experiencia" },
+    { "value": "3+",  "label": "Años de experiencia" },
     { "value": "30+", "label": "Proyectos entregados" },
     { "value": "10+", "label": "Certificaciones técnicas" }
   ],
