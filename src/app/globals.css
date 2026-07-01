@@ -51,6 +51,20 @@
   border-top: 1px solid rgba(255, 255, 255, 0.05);
 }
 
+@keyframes tab-hint-pulse {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(34, 181, 97, 0.35); }
+  50%      { box-shadow: 0 0 0 6px rgba(34, 181, 97, 0); }
+}
+.tab-hint {
+  animation: tab-hint-pulse 1.8s ease-in-out infinite;
+}
+
+.tilt-panel {
+  transform-style: preserve-3d;
+  will-change: transform;
+  transition: transform 0.1s ease-out;
+}
+
 body {
   background-color: var(--color-background);
   color: var(--color-foreground);
