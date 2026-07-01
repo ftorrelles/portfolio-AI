@@ -65,18 +65,43 @@
     "label": "TECH STACK",
     "h2_white": "Dev Stack &",
     "h2_green": "AI Stack",
-    "dev_frontend": {
-      "title": "Frontend",
-      "items": ["React.js / Next.js (App Router)","Angular","TypeScript / JavaScript","Tailwind CSS / Bootstrap / CSS3","HTML5 / Redux / React Hook Form","WordPress / Elementor / Figma"]
-    },
-    "dev_backend": {
-      "title": "Backend",
-      "items": ["Node.js / Express.js","APIs REST","PostgreSQL / MySQL / MongoDB","JWT / BCRYPT / Sequelize"]
-    },
-    "ai": {
-      "title": "AI Integration",
-      "items": ["OpenAI API · Claude API · Gemini API · Whisper API","LangChain · LangGraph","Multi-Agent Systems · LLM Orchestration","Prompt Engineering · LLM Fine-tuning · Vector DBs","Claude Code · OpenCode · OpenClaw · n8n","AI-Augmented Development"]
-    }
+    "categories": [
+      {
+        "id": "frontend",
+        "title": "Frontend",
+        "icon": "frontend",
+        "color": "white",
+        "items": ["TypeScript","React 19","Next.js 15/16 (App Router)","React Server Components","Server Actions","Node.js / Express.js","Angular","Redux","Tailwind CSS v4"]
+      },
+      {
+        "id": "backend",
+        "title": "Backend",
+        "icon": "backend",
+        "color": "white",
+        "items": ["PostgreSQL","Supabase (Auth · Realtime · Storage · RLS · RPCs)","Drizzle ORM","Sequelize ORM","MySQL","MongoDB","REST API","JWT · Bcrypt","Vercel · Docker / Docker Compose","Oracle Cloud (OCI)","PWA / Service Workers","Resend","WhatsApp Business API","Google Sheets / Drive"]
+      },
+      {
+        "id": "ai",
+        "title": "AI Integration",
+        "icon": "ai",
+        "color": "green",
+        "items": ["LangChain · LangGraph","Multi-Agent Systems · LLM Orchestration","Whisper API","LLM Fine-tuning"]
+      },
+      {
+        "id": "ai-augmented-dev",
+        "title": "AI-Augmented Dev",
+        "icon": "ai_aug",
+        "color": "green",
+        "items": ["Claude Code · OpenCode · Antigravity","Multi-Agent / Subagent Architecture","Agent Harnesses","Persistent Memory (Engram)","SDD Methodology","MCP (Model Context Protocol)","Prompt Engineering"]
+      },
+      {
+        "id": "ai-infrastructure",
+        "title": "AI Infrastructure",
+        "icon": "ai_infra",
+        "color": "green",
+        "items": ["RAG Architecture","Pinecone","Supabase pgvector","Google Vertex AI (Gemini 2.5 Flash · text-embedding-005)","OpenAI API","Claude API","n8n (self-hosted)"]
+      }
+    ]
   },
   "projects": {
     "label": "PORTFOLIO",
@@ -84,6 +109,57 @@
     "h2_green": "Projects",
     "ai_label": "🚀 AI-Powered Projects",
     "web_label": "💻 Web Projects",
+    "demoted_label": "Earlier Work",
+    "featured": [
+      {
+        "slug": "construction-budget",
+        "name": "Construction Budget Platform",
+        "summary": "A construction firm operating remotely from the US managed its entire budget cycle — quotes, approvals, execution, close-out — via Excel and WhatsApp, with no real-time cost visibility. Full-stack platform centralizing the entire project lifecycle: guided approval flows by role, real-time cost tracking (budgeted vs. actual per line item with traffic-light alerts), one-click PDF generation for clients, and a live profitability dashboard the owner accesses from the US.",
+        "tags": ["Next.js 16", "React 19", "TypeScript", "Tailwind v4", "Supabase", "PWA"],
+        "screens": [
+          { "slug": "rentabilidad", "label": "Rentabilidad", "image": "rentabilidad.png", "caption": "Live profitability dashboard: estimated profit, margin, and budget utilization at a glance." },
+          { "slug": "presupuestos", "label": "Presupuestos", "image": "presupuestos.png", "caption": "Budget list view with real-time status per project — in execution, in review, or closed." }
+        ],
+        "metrics": [
+          { "value": 2550, "prefix": "$", "label": "Estimated profit", "kind": "counter" },
+          { "value": 30, "suffix": "%", "label": "Margin", "kind": "counter" },
+          { "value": 93, "suffix": "%", "label": "Budget used", "kind": "bar" }
+        ]
+      },
+      {
+        "slug": "speakpath",
+        "name": "SpeakPath",
+        "summary": "An English academy running ~120 classes/month on manual scheduling (WhatsApp), static PDF content, and no financial visibility — with chronic double-bookings and zero data on teacher utilization or student progress. Full-stack PWA with three role-based panels (student, teacher, admin): automated 1-on-1 scheduling with real-time teacher availability and timezone support, interactive lesson content replacing PDFs, teacher earnings dashboard, and admin metrics in one place.",
+        "tags": ["Next.js 15", "TypeScript", "React Server Components", "Server Actions", "PostgreSQL", "Drizzle ORM", "Supabase", "PWA"],
+        "screens": [
+          { "slug": "dashboard", "label": "Dashboard", "image": "dashboard.png", "caption": "Student dashboard tracking course progress across the full curriculum." },
+          { "slug": "curriculum", "label": "Curriculum", "image": "curriculum.png", "caption": "6 units / 25 lessons, from \"Meeting People\" to \"Daily Life\"." },
+          { "slug": "roleplay", "label": "Role-play", "image": "roleplay.png", "caption": "17-minute guided speaking exercise: \"Meeting Someone New\"." }
+        ],
+        "metrics": [
+          { "value": 8, "suffix": "%", "label": "Course progress", "kind": "bar" },
+          { "value": 25, "label": "Lessons in curriculum", "kind": "counter" },
+          { "value": 17, "suffix": " min", "label": "Role-play exercise", "kind": "counter" }
+        ]
+      },
+      {
+        "slug": "cocinerhosp",
+        "name": "CocinerHosp",
+        "summary": "A hospital catering company serving 6 centers and 2 daily services was calculating production quantities manually — proteins, portions, frozen bag counts, dietary variants — with systematic error risk at scale. Mobile-first PWA (iOS + Android, no app store) built in one week. Automated production calculator with auto-populated waste factors, dietary module for soft diets, recipe scaling engine, production register, and analytics dashboard with per-chef filtering. 3-role access managed in-app.",
+        "tags": ["React 18", "TypeScript", "Vite", "Tailwind CSS", "Supabase", "vite-plugin-pwa"],
+        "screens": [
+          { "slug": "dashboard", "label": "Dashboard", "image": "dashboard.png", "caption": "526 barquetas this month, 75 avg/day, 19 elaboraciones, weekly and monthly production charts." },
+          { "slug": "calcular", "label": "Calcular", "image": "calcular.png", "caption": "Lunch service production calculator across 6 locations: Sur, Candelaria, Parque, SJDD, Hogar A, Hogar B." },
+          { "slug": "dietas-blandas", "label": "Dietas blandas", "image": "dietas-blandas.png", "caption": "Frozen bag counts per soft-diet variant: Papas, Zanahoria, Calabaza, Calabacín." }
+        ],
+        "metrics": [
+          { "value": 526, "label": "Barquetas this month", "kind": "counter" },
+          { "value": 75, "label": "Avg per day", "kind": "counter" },
+          { "value": 414, "label": "Patients per lunch service", "kind": "counter" },
+          { "value": 47, "label": "Frozen bags per day", "kind": "counter" }
+        ]
+      }
+    ],
     "items": [
       { "name": "Vivir Chevere", "desc": "Enterprise management software for the naturist sector.", "tags": ["React","Node.js","MySQL"], "badge": "AI-Powered", "url": "https://www.youtube.com/watch?v=KKoggMgaJDw", "image": "vivirc.webp" },
       { "name": "NetBar", "desc": "Website for internet service provider.", "tags": ["React","JS"], "badge": "AI-Powered", "url": "https://netbar.netlify.app/", "image": "netbar.webp" },
