@@ -1,6 +1,7 @@
 {
   "nav": {
     "skills": "Skills",
+    "experience": "Experience",
     "projects": "Projects",
     "about": "About",
     "process": "Process",
@@ -19,6 +20,46 @@
     { "value": "30+", "label": "Projects Delivered" },
     { "value": "10+", "label": "Tech Certifications" }
   ],
+  "experience": {
+    "label": "CAREER PATH",
+    "h2_white": "Professional",
+    "h2_green": "Experience",
+    "roles": [
+      {
+        "company": "NexDevp",
+        "role": "AI Systems Engineer & Full Stack Developer",
+        "period": "Jan 2026 — Present",
+        "location": "Remote",
+        "highlights": [
+          "Built all projects under a human-in-control AI architecture — specialized subagents per domain, harnesses govern each process, Engram persists context across projects.",
+          "Applied SDD on every project: 0 TypeScript errors in production across all platforms; every critical path covered by unit tests before release.",
+          "Delivered 3 enterprise-grade custom software platforms in 2026, each replacing a fully manual operation and cutting operational time by 30–100%."
+        ]
+      },
+      {
+        "company": "CodeCraft",
+        "role": "Full Stack Developer",
+        "period": "May 2023 — Dec 2025",
+        "location": "Remote",
+        "highlights": [
+          "Built complete enterprise management systems with React, Node.js, Express, and MySQL — RESTful APIs with controller/service architecture and Sequelize ORM.",
+          "Designed and deployed AI-powered lead capture systems connected to Google Sheets and Supabase, reducing manual CRM entry to zero.",
+          "Integrated n8n automation workflows and WhatsApp Business API for client communication pipelines."
+        ]
+      },
+      {
+        "company": "Dichter & Neira",
+        "role": "Wellness Analyst — Operations",
+        "period": "Jan 2021 — Aug 2022",
+        "location": "Latin America (multi-country)",
+        "highlights": [
+          "Coordinated projects and field teams across 5 Latin American countries simultaneously.",
+          "Built Power BI dashboards consolidating multi-country data for C-level decision-making.",
+          "Designed and implemented regional loyalty programs from strategy through execution."
+        ]
+      }
+    ]
+  },
   "skills": {
     "label": "TECH STACK",
     "h2_white": "Dev Stack &",

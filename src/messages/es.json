@@ -1,6 +1,7 @@
 {
   "nav": {
     "skills": "Habilidades",
+    "experience": "Experiencia",
     "projects": "Proyectos",
     "about": "Sobre mí",
     "process": "Proceso",
@@ -19,6 +20,46 @@
     { "value": "30+", "label": "Proyectos entregados" },
     { "value": "10+", "label": "Certificaciones técnicas" }
   ],
+  "experience": {
+    "label": "TRAYECTORIA",
+    "h2_white": "Experiencia",
+    "h2_green": "Profesional",
+    "roles": [
+      {
+        "company": "NexDevp",
+        "role": "Ingeniero de Sistemas de IA y Desarrollador Full Stack",
+        "period": "Ene 2026 — Presente",
+        "location": "Remoto",
+        "highlights": [
+          "Construí todos los proyectos bajo una arquitectura de IA con control humano — subagentes especializados por dominio, harnesses que gobiernan cada proceso, y Engram manteniendo el contexto persistente entre proyectos.",
+          "Apliqué SDD en cada proyecto: 0 errores de TypeScript en producción en todas las plataformas; cada camino crítico cubierto por tests unitarios antes de cada release.",
+          "Entregué 3 plataformas de software a medida en 2026, cada una reemplazando una operación completamente manual y reduciendo el tiempo operativo entre un 30% y un 100%."
+        ]
+      },
+      {
+        "company": "CodeCraft",
+        "role": "Desarrollador Full Stack",
+        "period": "May 2023 — Dic 2025",
+        "location": "Remoto",
+        "highlights": [
+          "Construí sistemas empresariales completos de gestión con React, Node.js, Express y MySQL — APIs RESTful con arquitectura controller/service y Sequelize ORM.",
+          "Diseñé y desplegué sistemas de captura de leads potenciados con IA conectados a Google Sheets y Supabase, reduciendo a cero la carga manual de CRM.",
+          "Integré flujos de automatización con n8n y la API de WhatsApp Business para pipelines de comunicación con clientes."
+        ]
+      },
+      {
+        "company": "Dichter & Neira",
+        "role": "Analista de Bienestar — Operaciones",
+        "period": "Ene 2021 — Ago 2022",
+        "location": "Latinoamérica (multi-país)",
+        "highlights": [
+          "Coordiné proyectos y equipos de campo en 5 países de Latinoamérica simultáneamente.",
+          "Construí dashboards en Power BI que consolidaban datos multi-país para la toma de decisiones a nivel directivo.",
+          "Diseñé e implementé programas regionales de fidelización de principio a fin."
+        ]
+      }
+    ]
+  },
   "skills": {
     "label": "STACK TECNOLÓGICO",
     "h2_white": "Dev Stack &",

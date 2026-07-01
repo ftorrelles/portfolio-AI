@@ -4,6 +4,7 @@ import dynamic from 'next/dynamic';
 import Nav from '@/components/sections/Nav';
 import Hero from '@/components/sections/Hero';
 import Stats from '@/components/sections/Stats';
+import Experience from '@/components/sections/Experience';
 import WhatsAppFloat from '@/components/ui/WhatsAppFloat';
 import ChatBot from '@/components/ui/ChatBot';
 import CursorEffect from '@/components/ui/CursorEffect';
@@ -34,6 +35,7 @@ export default async function Home({
       <Nav t={t} />
       <Hero t={t} />
       <Stats t={t} />
+      <Experience t={t} />
       <Skills t={t} />
       <Projects t={t} />
       <About t={t} />
