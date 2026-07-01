@@ -65,18 +65,43 @@
     "label": "STACK TECNOLÓGICO",
     "h2_white": "Dev Stack &",
     "h2_green": "AI Stack",
-    "dev_frontend": {
-      "title": "Frontend",
-      "items": ["React.js / Next.js (App Router)","Angular","TypeScript / JavaScript","Tailwind CSS / Bootstrap / CSS3","HTML5 / Redux / React Hook Form","WordPress / Elementor / Figma"]
-    },
-    "dev_backend": {
-      "title": "Backend",
-      "items": ["Node.js / Express.js","APIs REST","PostgreSQL / MySQL / MongoDB","JWT / BCRYPT / Sequelize"]
-    },
-    "ai": {
-      "title": "AI Integration",
-      "items": ["OpenAI API · Claude API · Gemini API · Whisper API","LangChain · LangGraph","Multi-Agent Systems · LLM Orchestration","Prompt Engineering · LLM Fine-tuning · Vector DBs","Claude Code · OpenCode · OpenClaw · n8n","AI-Augmented Development"]
-    }
+    "categories": [
+      {
+        "id": "frontend",
+        "title": "Frontend",
+        "icon": "frontend",
+        "color": "white",
+        "items": ["TypeScript","React 19","Next.js 15/16 (App Router)","React Server Components","Server Actions","Node.js / Express.js","Angular","Redux","Tailwind CSS v4"]
+      },
+      {
+        "id": "backend",
+        "title": "Backend",
+        "icon": "backend",
+        "color": "white",
+        "items": ["PostgreSQL","Supabase (Auth · Realtime · Storage · RLS · RPCs)","Drizzle ORM","Sequelize ORM","MySQL","MongoDB","REST API","JWT · Bcrypt","Vercel · Docker / Docker Compose","Oracle Cloud (OCI)","PWA / Service Workers","Resend","WhatsApp Business API","Google Sheets / Drive"]
+      },
+      {
+        "id": "ai",
+        "title": "AI Integration",
+        "icon": "ai",
+        "color": "green",
+        "items": ["LangChain · LangGraph","Multi-Agent Systems · LLM Orchestration","Whisper API","LLM Fine-tuning"]
+      },
+      {
+        "id": "ai-augmented-dev",
+        "title": "AI-Augmented Dev",
+        "icon": "ai_aug",
+        "color": "green",
+        "items": ["Claude Code · OpenCode · Antigravity","Multi-Agent / Subagent Architecture","Agent Harnesses","Persistent Memory (Engram)","SDD Methodology","MCP (Model Context Protocol)","Prompt Engineering"]
+      },
+      {
+        "id": "ai-infrastructure",
+        "title": "AI Infrastructure",
+        "icon": "ai_infra",
+        "color": "green",
+        "items": ["RAG Architecture","Pinecone","Supabase pgvector","Google Vertex AI (Gemini 2.5 Flash · text-embedding-005)","OpenAI API","Claude API","n8n (self-hosted)"]
+      }
+    ]
   },
   "projects": {
     "label": "PORTAFOLIO",
