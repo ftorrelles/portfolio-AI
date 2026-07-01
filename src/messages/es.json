@@ -5,6 +5,7 @@
     "projects": "Proyectos",
     "about": "Sobre mí",
     "process": "Proceso",
+    "certifications": "Certificaciones",
     "cta": "Hablemos ↗"
   },
   "hero": {
@@ -18,7 +19,7 @@
   "stats": [
     { "value": "3+",  "label": "Años de experiencia" },
     { "value": "30+", "label": "Proyectos entregados" },
-    { "value": "10+", "label": "Certificaciones técnicas" }
+    { "value": "6+", "label": "Certificaciones técnicas" }
   ],
   "experience": {
     "label": "TRAYECTORIA",
@@ -117,6 +118,20 @@
       { "number": "04", "title": "Deployment",    "desc": "Optimización final y lanzamiento del ecosistema." }
     ]
   },
+  "certifications": {
+    "label": "CREDENCIALES",
+    "h2_white": "Certificaciones y",
+    "h2_green": "Formación",
+    "in_progress": "En curso",
+    "items": [
+      { "name": "Generative AI with Large Language Models", "issuer": "DeepLearning.AI & AWS", "date": null },
+      { "name": "AI Development: from 0 to Production", "issuer": "BIG School", "date": "Mar 2026" },
+      { "name": "Cybersecurity & Ethical Hacking", "issuer": "BIG School", "date": "Abr 2026" },
+      { "name": "Full-Stack Web Development & CS", "issuer": "Academlo", "date": "2023" },
+      { "name": "Backend Development with Node.js", "issuer": "Academlo", "date": "2023" },
+      { "name": "Frontend Development with React", "issuer": "Academlo", "date": "2023" }
+    ]
+  },
   "cta": {
     "h2_white": "¿Tienes un proyecto",
     "h2_green": "en mente?",
@@ -128,7 +143,7 @@
     "role1": "Senior Full-Stack Developer",
     "role2": "AI Infrastructure Consultant",
     "explore_title": "Explorar",
-    "explore": ["Experiencia","Habilidades","Proyectos","Sobre mí","Proceso"],
+    "explore": ["Experiencia","Habilidades","Proyectos","Sobre mí","Proceso","Certificaciones"],
     "connect_title": "Conectar",
     "connect": [
       { "name": "LinkedIn", "url": "https://linkedin.com/in/francisco-torrelles-227771209" },

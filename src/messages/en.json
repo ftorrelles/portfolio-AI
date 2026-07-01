@@ -5,6 +5,7 @@
     "projects": "Projects",
     "about": "About",
     "process": "Process",
+    "certifications": "Certifications",
     "cta": "Let's Talk ↗"
   },
   "hero": {
@@ -18,7 +19,7 @@
   "stats": [
     { "value": "3+",  "label": "Years Experience" },
     { "value": "30+", "label": "Projects Delivered" },
-    { "value": "10+", "label": "Tech Certifications" }
+    { "value": "6+", "label": "Tech Certifications" }
   ],
   "experience": {
     "label": "CAREER PATH",
@@ -117,6 +118,20 @@
       { "number": "04", "title": "Deployment",    "desc": "Final optimization and ecosystem launch." }
     ]
   },
+  "certifications": {
+    "label": "CREDENTIALS",
+    "h2_white": "Certifications &",
+    "h2_green": "Training",
+    "in_progress": "In progress",
+    "items": [
+      { "name": "Generative AI with Large Language Models", "issuer": "DeepLearning.AI & AWS", "date": null },
+      { "name": "AI Development: from 0 to Production", "issuer": "BIG School", "date": "Mar 2026" },
+      { "name": "Cybersecurity & Ethical Hacking", "issuer": "BIG School", "date": "Apr 2026" },
+      { "name": "Full-Stack Web Development & CS", "issuer": "Academlo", "date": "2023" },
+      { "name": "Backend Development with Node.js", "issuer": "Academlo", "date": "2023" },
+      { "name": "Frontend Development with React", "issuer": "Academlo", "date": "2023" }
+    ]
+  },
   "cta": {
     "h2_white": "Have a project",
     "h2_green": "in mind?",
@@ -128,7 +143,7 @@
     "role1": "Senior Full-Stack Developer",
     "role2": "AI Infrastructure Consultant",
     "explore_title": "Explore",
-    "explore": ["Experience","Skills","Projects","About","Process"],
+    "explore": ["Experience","Skills","Projects","About","Process","Certifications"],
     "connect_title": "Connect",
     "connect": [
       { "name": "LinkedIn", "url": "https://linkedin.com/in/francisco-torrelles-227771209" },

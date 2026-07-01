@@ -13,6 +13,7 @@ const Skills = dynamic(() => import('@/components/sections/Skills'), { ssr: true
 const Projects = dynamic(() => import('@/components/sections/Projects'), { ssr: true });
 const About = dynamic(() => import('@/components/sections/About'), { ssr: true });
 const Process = dynamic(() => import('@/components/sections/Process'), { ssr: true });
+const Certifications = dynamic(() => import('@/components/sections/Certifications'), { ssr: true });
 const CtaFinal = dynamic(() => import('@/components/sections/CtaFinal'), { ssr: true });
 const Footer = dynamic(() => import('@/components/sections/Footer'), { ssr: true });
 
@@ -40,6 +41,7 @@ export default async function Home({
       <Projects t={t} />
       <About t={t} />
       <Process t={t} />
+      <Certifications t={t} />
       <CtaFinal t={t} />
       <Footer t={t} />
       <ChatBot t={t} />
