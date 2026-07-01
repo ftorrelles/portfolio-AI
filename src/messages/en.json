@@ -25,16 +25,32 @@
     "label": "CAREER PATH",
     "h2_white": "Professional",
     "h2_green": "Experience",
+    "seeking_label": "Open to the next challenge",
     "roles": [
       {
         "company": "NexDevp",
         "role": "AI Systems Engineer & Full Stack Developer",
         "period": "Jan 2026 — Present",
         "location": "Remote",
-        "highlights": [
-          "Built all projects under a human-in-control AI architecture — specialized subagents per domain, harnesses govern each process, Engram persists context across projects.",
-          "Applied SDD on every project: 0 TypeScript errors in production across all platforms; every critical path covered by unit tests before release.",
-          "Delivered 3 enterprise-grade custom software platforms in 2026, each replacing a fully manual operation and cutting operational time by 30–100%."
+        "blurb": "Custom software for clients in healthcare, construction, and education — built AI-native from day one: dedicated subagents per domain, harness-controlled execution, persistent cross-project memory (Engram), and a full SDD cycle.",
+        "groups": [
+          {
+            "heading": "AI-Native Development",
+            "items": [
+              "Built all projects under a human-in-control AI architecture: specialized subagents per domain, harnesses govern each process, Engram persists context across projects — eliminating ramp-up time between engagements.",
+              "Applied SDD on every project: 0 TypeScript errors in production across all platforms; every critical path covered by unit tests before release.",
+              "Built production RAG pipelines using Pinecone and Supabase pgvector with Gemini text-embedding-005 for semantic retrieval over client knowledge bases.",
+              "Delivered a full production platform in one week (CocinerHosp) by applying the structured AI methodology across the entire cycle — from architecture through debugging."
+            ]
+          },
+          {
+            "heading": "Product Engineering",
+            "items": [
+              "Delivered 3 enterprise-grade custom software platforms in 2026 — web apps, PWAs, and tailored management systems — each replacing a fully manual operation, cutting operational time by 30–100%.",
+              "Architected RBAC authorization (server-side on every endpoint) with Supabase Auth + RLS, with zero reported security incidents across all platforms.",
+              "Reduced average client time-on-task from 30 minutes to 2 minutes on production workflows."
+            ]
+          }
         ]
       },
       {
@@ -42,10 +58,17 @@
         "role": "Full Stack Developer",
         "period": "May 2023 — Dec 2025",
         "location": "Remote",
-        "highlights": [
-          "Built complete enterprise management systems with React, Node.js, Express, and MySQL — RESTful APIs with controller/service architecture and Sequelize ORM.",
-          "Designed and deployed AI-powered lead capture systems connected to Google Sheets and Supabase, reducing manual CRM entry to zero.",
-          "Integrated n8n automation workflows and WhatsApp Business API for client communication pipelines."
+        "blurb": "Independent full-stack development for clients across services, non-profits, healthcare, and market research. Progressed from traditional development to AI-augmented workflows.",
+        "groups": [
+          {
+            "heading": null,
+            "items": [
+              "Built complete enterprise management systems with React, Node.js, Express, and MySQL — RESTful APIs with controller/service architecture and Sequelize ORM.",
+              "Implemented Supabase for real-time lead capture and scalable data management across multiple client projects.",
+              "Designed and deployed AI-powered lead capture systems connected to Google Sheets and Supabase, reducing manual CRM entry to zero.",
+              "Integrated n8n (self-hosted) automation workflows and WhatsApp Business API for client communication pipelines."
+            ]
+          }
         ]
       },
       {
@@ -53,10 +76,15 @@
         "role": "Wellness Analyst — Operations",
         "period": "Jan 2021 — Aug 2022",
         "location": "Latin America (multi-country)",
-        "highlights": [
-          "Coordinated projects and field teams across 5 Latin American countries simultaneously.",
-          "Built Power BI dashboards consolidating multi-country data for C-level decision-making.",
-          "Designed and implemented regional loyalty programs from strategy through execution."
+        "groups": [
+          {
+            "heading": null,
+            "items": [
+              "Coordinated projects and field teams across 5 Latin American countries simultaneously.",
+              "Built Power BI dashboards consolidating multi-country data for C-level decision-making.",
+              "Designed and implemented regional loyalty programs from strategy through execution."
+            ]
+          }
         ]
       }
     ]
