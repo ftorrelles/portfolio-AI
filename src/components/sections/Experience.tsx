@@ -14,12 +14,14 @@ export default function Experience({ t }: { t: any }) {
         <TimelineLine />
 
         {t.experience.seeking_label && (
-          <div className="relative">
-            <span className="absolute -left-[2.6rem] top-1 flex h-3 w-3">
+          <div className="relative mb-6">
+            <span className="absolute -left-[2.6rem] top-1/2 -translate-y-1/2 flex h-3 w-3">
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-nex-green opacity-75"></span>
               <span className="relative inline-flex rounded-full h-3 w-3 bg-nex-green"></span>
             </span>
-            <p className="text-nex-green text-xs font-semibold uppercase tracking-widest">{t.experience.seeking_label}</p>
+            <span className="inline-flex items-center gap-1.5 text-xs uppercase tracking-widest text-nex-green bg-nex-green/10 border border-nex-green/30 rounded-full px-3 py-1">
+              {t.experience.seeking_label}
+            </span>
           </div>
         )}
 
