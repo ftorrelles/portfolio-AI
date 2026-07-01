@@ -32,23 +32,23 @@
         "role": "Ingeniero de Sistemas de IA y Desarrollador Full Stack",
         "period": "Ene 2026 — Presente",
         "location": "Remoto",
-        "blurb": "Software a medida para clientes de salud, construcción y educación — nativo en IA desde el día uno: subagentes dedicados por dominio, ejecución gobernada por harnesses, memoria persistente entre proyectos (Engram), y un ciclo SDD completo.",
+        "blurb": "Software a medida y nativo en IA para clientes de salud, construcción y educación — subagentes dedicados, ejecución gobernada por harnesses, memoria persistente (Engram), y un ciclo SDD completo.",
         "groups": [
           {
             "heading": "Desarrollo Nativo en IA",
             "items": [
-              "Construí todos los proyectos bajo una arquitectura de IA con control humano: subagentes especializados por dominio, harnesses que gobiernan cada proceso, y Engram manteniendo el contexto persistente entre proyectos — eliminando el tiempo de arranque entre clientes.",
-              "Apliqué SDD en cada proyecto: 0 errores de TypeScript en producción en todas las plataformas; cada camino crítico cubierto por tests unitarios antes de cada release.",
-              "Construí pipelines de RAG en producción usando Pinecone y Supabase pgvector con Gemini text-embedding-005 para recuperación semántica sobre bases de conocimiento de clientes.",
-              "Entregué una plataforma completa en producción en una semana (CocinerHosp) aplicando la metodología estructurada de IA en todo el ciclo — desde la arquitectura hasta el debugging."
+              "Construí cada proyecto sobre una arquitectura de IA con control humano: subagentes por dominio, harnesses gobernando cada proceso, y Engram preservando el contexto entre clientes.",
+              "Apliqué SDD en cada proyecto: 0 errores de TypeScript en producción, cada camino crítico con tests unitarios antes de cada release.",
+              "Construí pipelines de RAG en producción (Pinecone, Supabase pgvector, Gemini text-embedding-005) para búsqueda semántica sobre bases de conocimiento de clientes.",
+              "Entregué una plataforma completa en producción en una semana (CocinerHosp), aplicando la metodología de IA de punta a punta — desde la arquitectura hasta el debugging."
             ]
           },
           {
             "heading": "Ingeniería de Producto",
             "items": [
-              "Entregué 3 plataformas de software a medida de nivel empresarial en 2026 — apps web, PWAs y sistemas de gestión a medida — cada una reemplazando una operación completamente manual, reduciendo el tiempo operativo entre un 30% y un 100%.",
-              "Diseñé la autorización RBAC (validada del lado del servidor en cada endpoint) con Supabase Auth + RLS, sin incidentes de seguridad reportados en ninguna plataforma.",
-              "Reduje el tiempo promedio de tarea del cliente de 30 minutos a 2 minutos en flujos de producción."
+              "Entregué 3 plataformas de nivel empresarial en 2026 (apps web, PWAs, sistemas de gestión), cada una reemplazando una operación manual y reduciendo el tiempo operativo entre un 30% y un 100%.",
+              "Diseñé RBAC del lado del servidor con Supabase Auth + RLS — cero incidentes de seguridad reportados en todas las plataformas.",
+              "Reduje el tiempo promedio de tarea del cliente de 30 minutos a 2 en flujos de producción."
             ]
           }
         ]
@@ -58,14 +58,14 @@
         "role": "Desarrollador Full Stack",
         "period": "May 2023 — Dic 2025",
         "location": "Remoto",
-        "blurb": "Desarrollo full-stack independiente para clientes de servicios, ONGs, salud e investigación de mercado. Evolucioné del desarrollo tradicional a flujos de trabajo aumentados con IA.",
+        "blurb": "Desarrollo full-stack independiente para clientes de servicios, ONGs, salud e investigación de mercado — evolucioné del desarrollo tradicional a flujos aumentados con IA.",
         "groups": [
           {
             "heading": null,
             "items": [
-              "Construí sistemas empresariales completos de gestión con React, Node.js, Express y MySQL — APIs RESTful con arquitectura controller/service y Sequelize ORM.",
-              "Implementé Supabase para captura de leads en tiempo real y gestión de datos escalable en múltiples proyectos de clientes.",
-              "Diseñé y desplegué sistemas de captura de leads potenciados con IA conectados a Google Sheets y Supabase, reduciendo a cero la carga manual de CRM.",
+              "Construí sistemas empresariales de gestión con React, Node.js, Express y MySQL — APIs RESTful con arquitectura controller/service y Sequelize ORM.",
+              "Implementé Supabase para captura de leads en tiempo real y gestión de datos escalable en proyectos de clientes.",
+              "Diseñé captura de leads potenciada con IA conectada a Google Sheets y Supabase, reduciendo a cero la carga manual de CRM.",
               "Integré flujos de automatización con n8n (self-hosted) y la API de WhatsApp Business para pipelines de comunicación con clientes."
             ]
           }

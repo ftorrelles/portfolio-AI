@@ -32,23 +32,23 @@
         "role": "AI Systems Engineer & Full Stack Developer",
         "period": "Jan 2026 — Present",
         "location": "Remote",
-        "blurb": "Custom software for clients in healthcare, construction, and education — built AI-native from day one: dedicated subagents per domain, harness-controlled execution, persistent cross-project memory (Engram), and a full SDD cycle.",
+        "blurb": "Custom AI-native software for healthcare, construction, and education clients — dedicated subagents, harness-controlled execution, persistent memory (Engram), and a full SDD cycle.",
         "groups": [
           {
             "heading": "AI-Native Development",
             "items": [
-              "Built all projects under a human-in-control AI architecture: specialized subagents per domain, harnesses govern each process, Engram persists context across projects — eliminating ramp-up time between engagements.",
-              "Applied SDD on every project: 0 TypeScript errors in production across all platforms; every critical path covered by unit tests before release.",
-              "Built production RAG pipelines using Pinecone and Supabase pgvector with Gemini text-embedding-005 for semantic retrieval over client knowledge bases.",
-              "Delivered a full production platform in one week (CocinerHosp) by applying the structured AI methodology across the entire cycle — from architecture through debugging."
+              "Built every project on a human-in-control AI architecture: subagents per domain, harnesses governing each process, Engram preserving context across engagements.",
+              "Applied SDD on every project: 0 TypeScript errors in production, every critical path unit-tested before release.",
+              "Built production RAG pipelines (Pinecone, Supabase pgvector, Gemini text-embedding-005) for semantic search over client knowledge bases.",
+              "Delivered a full production platform in one week (CocinerHosp), applying the AI methodology end to end — architecture through debugging."
             ]
           },
           {
             "heading": "Product Engineering",
             "items": [
-              "Delivered 3 enterprise-grade custom software platforms in 2026 — web apps, PWAs, and tailored management systems — each replacing a fully manual operation, cutting operational time by 30–100%.",
-              "Architected RBAC authorization (server-side on every endpoint) with Supabase Auth + RLS, with zero reported security incidents across all platforms.",
-              "Reduced average client time-on-task from 30 minutes to 2 minutes on production workflows."
+              "Delivered 3 enterprise-grade platforms in 2026 (web apps, PWAs, management systems), each replacing a manual operation and cutting operational time 30–100%.",
+              "Architected server-side RBAC with Supabase Auth + RLS — zero reported security incidents across all platforms.",
+              "Cut average client time-on-task from 30 minutes to 2 on production workflows."
             ]
           }
         ]
@@ -58,14 +58,14 @@
         "role": "Full Stack Developer",
         "period": "May 2023 — Dec 2025",
         "location": "Remote",
-        "blurb": "Independent full-stack development for clients across services, non-profits, healthcare, and market research. Progressed from traditional development to AI-augmented workflows.",
+        "blurb": "Independent full-stack development for services, non-profit, healthcare, and market-research clients — evolved from traditional development to AI-augmented workflows.",
         "groups": [
           {
             "heading": null,
             "items": [
-              "Built complete enterprise management systems with React, Node.js, Express, and MySQL — RESTful APIs with controller/service architecture and Sequelize ORM.",
-              "Implemented Supabase for real-time lead capture and scalable data management across multiple client projects.",
-              "Designed and deployed AI-powered lead capture systems connected to Google Sheets and Supabase, reducing manual CRM entry to zero.",
+              "Built enterprise management systems with React, Node.js, Express, and MySQL — RESTful APIs with controller/service architecture and Sequelize ORM.",
+              "Implemented Supabase for real-time lead capture and scalable data management across client projects.",
+              "Designed AI-powered lead capture connected to Google Sheets and Supabase, cutting manual CRM entry to zero.",
               "Integrated n8n (self-hosted) automation workflows and WhatsApp Business API for client communication pipelines."
             ]
           }
