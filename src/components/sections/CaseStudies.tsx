@@ -3,16 +3,11 @@ import { useEffect, useRef, useState } from 'react';
 import { usePathname } from 'next/navigation';
 import AnimatedEntry from '../ui/AnimatedEntry';
 import DeviceFrame from '../ui/DeviceFrame';
-import Counter from '../ui/Counter';
-import Grow from '../ui/Grow';
 import { getRealScreenMockup } from '../case-mockups/RealScreens';
 
-type Metric = {
-  value: number;
-  prefix?: string;
-  suffix?: string;
+type Highlight = {
+  value: string;
   label: string;
-  kind: 'counter' | 'bar';
 };
 
 type Screen = {
@@ -25,10 +20,13 @@ type Screen = {
 type Featured = {
   slug: string;
   name: string;
-  summary: string;
+  problem_label: string;
+  problem: string;
+  solution_label: string;
+  solution: string;
   tags: string[];
   screens: Screen[];
-  metrics: Metric[];
+  highlights: Highlight[];
 };
 
 export default function CaseStudies({ t }: { t: any }) {
@@ -110,8 +108,16 @@ export default function CaseStudies({ t }: { t: any }) {
 
         <div className="lg:col-span-2">
           <AnimatedEntry>
-            <div className="bg-nex-dark border border-white/10 rounded-xl p-6 h-full">
-              <p className="text-nex-grey text-sm mb-4">{activeCase.summary}</p>
+            <div className="bg-nex-dark border border-white/10 rounded-xl p-6 h-full" key={`panel-${caseIdx}`}>
+              <div className="mb-4">
+                <span className="text-nex-grey text-[10px] font-semibold uppercase tracking-widest">{activeCase.problem_label}</span>
+                <p className="text-nex-grey text-sm mt-1.5">{activeCase.problem}</p>
+              </div>
+              <div className="mb-5">
+                <span className="text-nex-green text-[10px] font-semibold uppercase tracking-widest">{activeCase.solution_label}</span>
+                <p className="text-nex-grey text-sm mt-1.5">{activeCase.solution}</p>
+              </div>
+
               <div className="flex flex-wrap gap-2 mb-6">
                 {activeCase.tags.map((tag) => (
                   <span key={tag} className="text-xs text-nex-grey bg-white/8 px-2 py-0.5 rounded">
@@ -120,20 +126,11 @@ export default function CaseStudies({ t }: { t: any }) {
                 ))}
               </div>
 
-              <div className="flex flex-col gap-5" key={`metrics-${caseIdx}`}>
-                {activeCase.metrics.map((metric, i) => (
-                  <div key={`${caseIdx}-${i}`}>
-                    <div className="flex items-baseline justify-between mb-1">
-                      <span className="text-nex-grey text-xs uppercase tracking-wide">{metric.label}</span>
-                      {metric.kind === 'counter' && (
-                        <span className="text-nex-green font-black text-2xl">
-                          <Counter value={metric.value} prefix={metric.prefix} suffix={metric.suffix} />
-                        </span>
-                      )}
-                    </div>
-                    {metric.kind === 'bar' && (
-                      <Grow value={metric.value} suffix={metric.suffix} label={metric.label} />
-                    )}
+              <div className="flex flex-col gap-4 pt-5 border-t border-white/5">
+                {activeCase.highlights.map((h, i) => (
+                  <div key={i}>
+                    <p className="text-nex-green font-black text-xl leading-tight">{h.value}</p>
+                    <p className="text-nex-grey text-xs mt-0.5">{h.label}</p>
                   </div>
                 ))}
               </div>
