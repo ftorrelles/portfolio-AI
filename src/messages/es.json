@@ -206,9 +206,9 @@
     "h2_green": "Logic",
     "text": "Soy un arquitecto de software impulsado por el desafío de conectar necesidades humanas complejas con soluciones técnicas elegantes. Con enfoque en el ecosistema JavaScript y flujos de trabajo con IA, construyo herramientas que no solo funcionan — piensan.\n\nMi enfoque está basado en integridad estructural y escalabilidad. Ya sea una aplicación web de alto tráfico o un agente de IA autónomo, garantizo que los cimientos sean tan robustos como la interfaz es intuitiva.",
     "achievements": [
-      { "icon": "🚀", "title": "3 plataformas", "subtitle": "Entregadas en 2026" },
-      { "icon": "🧪", "title": "0 errores de TS", "subtitle": "En producción, todas las plataformas" },
-      { "icon": "⚡", "title": "30 min → 2 min", "subtitle": "Tiempo de tarea del cliente reducido" }
+      { "icon": "🧭", "title": "Orquestación de IA", "subtitle": "Subagentes, harnesses y memoria persistente" },
+      { "icon": "🎯", "title": "Problemas reales, productos reales", "subtitle": "Operaciones manuales reemplazadas por software" },
+      { "icon": "🛡️", "title": "IA gobernada por SDD", "subtitle": "Con control humano, especificada, testeada" }
     ],
     "social_proof": "1,275 seguidores en LinkedIn · 500+ conexiones"
   },
@@ -231,10 +231,10 @@
     "featured_label": "Credenciales principales",
     "verify_label": "Verificar",
     "featured": [
-      { "name": "Foundations in HTML, CSS, and JavaScript", "issuer": "Academlo", "date": "Dic 2022", "url": "https://certificates.academlo.com/en/verify/71355639733376" },
-      { "name": "Frontend Development with React", "issuer": "Academlo", "date": "Feb 2023", "url": "https://certificates.academlo.com/en/verify/21915912021493" },
+      { "name": "Full-Stack Web Development", "issuer": "Academlo", "date": "2023", "url": "https://certificates.academlo.com/en/verify/10282805262558" },
       { "name": "Backend Development with Node.js", "issuer": "Academlo", "date": "Abr 2023", "url": "https://certificates.academlo.com/en/verify/13919133637465" },
-      { "name": "Full-Stack Web Development & CS", "issuer": "Academlo", "date": "2023", "url": "https://certificates.academlo.com/en/verify/10282805262558" }
+      { "name": "Frontend Development with React", "issuer": "Academlo", "date": "Feb 2023", "url": "https://certificates.academlo.com/en/verify/21915912021493" },
+      { "name": "Foundations in HTML, CSS, and JavaScript", "issuer": "Academlo", "date": "Dic 2022", "url": "https://certificates.academlo.com/en/verify/71355639733376" }
     ],
     "education_label": "Educación",
     "education": {

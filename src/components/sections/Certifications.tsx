@@ -10,6 +10,23 @@ export default function Certifications({ t }: { t: any }) {
         <span className="text-nex-green">{t.certifications.h2_green}</span>
       </h2>
 
+      <p className="text-nex-grey text-xs font-semibold uppercase tracking-widest mb-4">{t.certifications.education_label}</p>
+      <AnimatedEntry>
+        <div className="bg-nex-dark border border-white/10 rounded-xl p-6 mb-14 flex flex-col sm:flex-row sm:items-center gap-4">
+          <span className="relative flex h-3 w-3 flex-shrink-0">
+            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-nex-green opacity-75"></span>
+            <span className="relative inline-flex rounded-full h-3 w-3 bg-nex-green"></span>
+          </span>
+          <div className="flex-1">
+            <h3 className="text-white font-semibold text-base">{t.certifications.education.institution}</h3>
+            <p className="text-nex-grey text-sm">{t.certifications.education.degree} · {t.certifications.education.period}</p>
+          </div>
+          <span className="inline-flex w-fit items-center text-xs uppercase tracking-widest text-nex-green bg-nex-green/10 border border-nex-green/30 rounded-full px-3 py-1">
+            {t.certifications.education.status}
+          </span>
+        </div>
+      </AnimatedEntry>
+
       <p className="text-nex-grey text-xs font-semibold uppercase tracking-widest mb-5">{t.certifications.featured_label}</p>
       <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-5 mb-14">
         {t.certifications.featured.map((cert: any, i: number) => (
@@ -30,23 +47,6 @@ export default function Certifications({ t }: { t: any }) {
           </AnimatedEntry>
         ))}
       </div>
-
-      <p className="text-nex-grey text-xs font-semibold uppercase tracking-widest mb-4">{t.certifications.education_label}</p>
-      <AnimatedEntry>
-        <div className="bg-nex-dark border border-white/10 rounded-xl p-6 mb-14 flex flex-col sm:flex-row sm:items-center gap-4">
-          <span className="relative flex h-3 w-3 flex-shrink-0">
-            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-nex-green opacity-75"></span>
-            <span className="relative inline-flex rounded-full h-3 w-3 bg-nex-green"></span>
-          </span>
-          <div className="flex-1">
-            <h3 className="text-white font-semibold text-base">{t.certifications.education.institution}</h3>
-            <p className="text-nex-grey text-sm">{t.certifications.education.degree} · {t.certifications.education.period}</p>
-          </div>
-          <span className="inline-flex w-fit items-center text-xs uppercase tracking-widest text-nex-green bg-nex-green/10 border border-nex-green/30 rounded-full px-3 py-1">
-            {t.certifications.education.status}
-          </span>
-        </div>
-      </AnimatedEntry>
 
       <p className="text-nex-grey text-xs font-semibold uppercase tracking-widest mb-4">{t.certifications.chips_label}</p>
       <AnimatedEntry>
