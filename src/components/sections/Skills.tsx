@@ -27,20 +27,20 @@ const ICONS: Record<SkillCategory["icon"], React.ReactNode> = {
   ),
 };
 
-const CARD_STYLES: Record<"white" | "green", { card: string; iconBox: string; icon: string; title: string; dot: string }> = {
+const CARD_STYLES: Record<"white" | "green", { card: string; iconBox: string; icon: string; title: string; chip: string }> = {
   white: {
-    card: "border border-white/10 hover:border-white/30 hover:shadow-[0_0_30px_rgba(255,255,255,0.1)]",
+    card: "border border-white/10 shadow-[0_10px_30px_rgba(0,0,0,0.35)] hover:border-white/30 hover:shadow-[0_10px_40px_rgba(255,255,255,0.08)]",
     iconBox: "bg-white/8 border border-white/15",
     icon: "text-white",
     title: "text-white",
-    dot: "bg-white/40",
+    chip: "bg-white/5 text-nex-grey border-white/10",
   },
   green: {
-    card: "border border-nex-green/10 hover:border-nex-green/30 hover:shadow-[0_0_30px_rgba(34,181,97,0.15)]",
+    card: "border border-nex-green/10 shadow-[0_10px_30px_rgba(0,0,0,0.35)] hover:border-nex-green/30 hover:shadow-[0_10px_40px_rgba(34,181,97,0.15)]",
     iconBox: "bg-nex-green/15 border border-nex-green/40",
     icon: "text-nex-green",
     title: "text-nex-green",
-    dot: "bg-nex-green",
+    chip: "bg-nex-green/10 text-nex-green border-nex-green/25",
   },
 };
 
@@ -48,17 +48,16 @@ function SkillCard({ title, items, color, icon }: { title: string; items: string
   const s = CARD_STYLES[color];
   return (
     <AnimatedEntry>
-      <div className={`bg-nex-dark p-8 rounded-xl h-full group transition-all duration-300 ${s.card}`}>
+      <div className={`bg-nex-dark p-8 rounded-xl h-full transition-all duration-300 ${s.card}`}>
         <div className={`${s.iconBox} rounded-lg p-3 w-fit mb-6`}>
           <svg className={`w-8 h-8 ${s.icon}`} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="1.5">
             {icon}
           </svg>
         </div>
-        <h3 className={`text-xl ${s.title} mb-6 font-semibold`}>{title}</h3>
-        <div className="flex flex-col gap-2">
+        <h3 className={`text-xl ${s.title} mb-5 font-semibold`}>{title}</h3>
+        <div className="flex flex-wrap gap-2">
           {items.map((item: string) => (
-            <span key={item} className="text-nex-grey text-sm flex items-center gap-2 group-hover:text-white transition">
-              <span className={`w-1.5 h-1.5 rounded-full ${s.dot}`}></span>
+            <span key={item} className={`text-xs px-3 py-1.5 rounded-full border ${s.chip}`}>
               {item}
             </span>
           ))}

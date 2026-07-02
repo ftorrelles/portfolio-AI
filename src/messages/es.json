@@ -95,27 +95,6 @@
     "h2_green": "AI Stack",
     "categories": [
       {
-        "id": "frontend",
-        "title": "Frontend",
-        "icon": "frontend",
-        "color": "white",
-        "items": ["TypeScript","React 19","Next.js 15/16 (App Router)","React Server Components","Server Actions","Node.js / Express.js","Angular","Redux","Tailwind CSS v4"]
-      },
-      {
-        "id": "backend",
-        "title": "Backend",
-        "icon": "backend",
-        "color": "white",
-        "items": ["PostgreSQL","Supabase (Auth · Realtime · Storage · RLS · RPCs)","Drizzle ORM","Sequelize ORM","MySQL","MongoDB","REST API","JWT · Bcrypt","Vercel · Docker / Docker Compose","Oracle Cloud (OCI)","PWA / Service Workers","Resend","WhatsApp Business API","Google Sheets / Drive"]
-      },
-      {
-        "id": "ai",
-        "title": "AI Integration",
-        "icon": "ai",
-        "color": "green",
-        "items": ["LangChain · LangGraph","Multi-Agent Systems · LLM Orchestration","Whisper API","LLM Fine-tuning"]
-      },
-      {
         "id": "ai-augmented-dev",
         "title": "AI-Augmented Dev",
         "icon": "ai_aug",
@@ -127,7 +106,21 @@
         "title": "AI Infrastructure",
         "icon": "ai_infra",
         "color": "green",
-        "items": ["RAG Architecture","Pinecone","Supabase pgvector","Google Vertex AI (Gemini 2.5 Flash · text-embedding-005)","OpenAI API","Claude API","n8n (self-hosted)"]
+        "items": ["RAG Architecture","Pinecone","Supabase pgvector","Google Vertex AI (Gemini 2.5 Flash · text-embedding-005)","OpenAI API","Claude API","n8n (self-hosted)","LangChain · LangGraph","Whisper API","LLM Fine-tuning"]
+      },
+      {
+        "id": "frontend",
+        "title": "Frontend",
+        "icon": "frontend",
+        "color": "white",
+        "items": ["TypeScript","React 19","Next.js 15/16 (App Router)","React Server Components","Server Actions","Angular","Redux","Tailwind CSS v4"]
+      },
+      {
+        "id": "backend",
+        "title": "Backend",
+        "icon": "backend",
+        "color": "white",
+        "items": ["PostgreSQL","Supabase (Auth · Realtime · Storage · RLS · RPCs)","Drizzle ORM","Sequelize ORM","MySQL","MongoDB","Node.js / Express.js","REST API","JWT · Bcrypt","Vercel · Docker / Docker Compose","Oracle Cloud (OCI)","PWA / Service Workers","Resend","WhatsApp Business API","Google Sheets / Drive"]
       }
     ]
   },
